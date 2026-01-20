@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion Administration – LPM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header>
+        <h1>Lycée Pilote de Manouba</h1>
+        <p>Accès réservé à l'élève</p>
+    </header>
+
+    <!-- =========================
+         FORMULAIRE DE CONNEXION
+    ========================== -->
+    <div class="container">
+        <div id="main-section">
+            <section style="max-width: 400px; margin: auto;">
+
+                <h2 style="text-align:center;">Connexion Élève</h2>
+
+
+                <form method="post" action="">
+                    <div class="tabs" id="username-tab">
+                        <label for="username">Identifiant:</label>
+                        <input type="text" name="username" id="username" required>
+                    </div>
+
+                    <div class="tabs" id="password-tab">
+                        <label for="password">Mot de passe:</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+
+                   <button id="button" type="submit" class="btn" style="width:100%;">
+                        Se connecter
+                    </button>
+                </form>
+
+                <p style="text-align:center; margin-top:15px;">
+                    <a id="return" href="../../index.html">← Retour à l'accueil</a>
+                </p>
+
+            </section>
+        </div>
+    </div>
+    
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer>
+        <p>&copy; 2026 – Lycée Pilote de Manouba</p>
+    </footer>
+</body>
+</html>
