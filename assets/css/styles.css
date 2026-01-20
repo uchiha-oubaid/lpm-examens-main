@@ -1,0 +1,346 @@
+/* =========================================================
+   CHARTE GLOBALE – Lycée Pilote de Manouba
+   ========================================================= */
+
+/* ---------- RESET ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- VARIABLES ---------- */
+:root {
+    --primary-color: #0b3c5d;   /* Bleu institutionnel */
+    --secondary-color: #1d6fa5;
+    --accent-color: #f1f5f9;
+    --text-color: #333333;
+    --border-color: #dcdcdc;
+    --success-color: #2e7d32;
+    --danger-color: #c62828;
+    --font-main: "Segoe UI", Arial, sans-serif;
+    --btn-background-color: rgba(200, 195, 195, 0.325);
+}
+
+/* ---------- BASE ---------- */
+body {
+    font-family: var(--font-main);
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    min-height: 100vh;
+}
+
+.titresa {
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: 300ms ease-in-out;
+    position: relative;
+}
+
+.titresa::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    top: 70%;
+    transition: 300ms ease-in-out;
+}
+
+.titresa:hover::before {
+    width: 90%;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+header img {
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+nav {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-color);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 10px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+nav ul li a:hover {
+    background-color: var(--accent-color);
+    width: 110% + 5px;
+    border-radius: 2px;
+}
+
+/* =========================================================
+   CONTENEUR PRINCIPAL
+   ========================================================= */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* =========================================================
+   SECTION ACCUEIL
+   ========================================================= */
+section {
+    margin-bottom: 40px;
+}
+
+.titres {
+    font-size: 22px;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    /*border-left: 5px solid var(--secondary-color);*/
+    padding-left: 10px;
+    position: relative;
+    transition: 300ms ease-in-out;
+    z-index: 1;
+}
+
+.titres:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.titres::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: var(--secondary-color);
+    border-radius: 2px;
+    width: 10px;
+    height: 150%;
+    left: -5px;
+    transition: 300ms ease-in-out;
+    top: -5px;
+}
+
+.titres:hover::before {
+    width: 110%;
+    transform: translateX(5px);
+}
+
+.text {
+    margin-top: 20px;
+}
+
+section p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.text li {
+    margin-left: 25px;
+}
+
+/* =========================================================
+   BOUTONS
+   ========================================================= */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px 5px;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+}
+
+/* =========================================================
+   FORMULAIRES (LOGIN)
+   ========================================================= */
+form {
+    max-width: 420px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* =========================================================
+   DASHBOARD
+   ========================================================= */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+
+.card h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+/* =========================================================
+   TABLEAUX (ADMIN)
+   ========================================================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+table th,
+table td {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+table th {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* =========================================================
+   ALERTES
+   ========================================================= */
+.alert-success {
+    background-color: #e8f5e9;
+    color: var(--success-color);
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.alert-danger {
+    background-color: #fdecea;
+    color: var(--danger-color);
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 13px;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    .titres {
+        font-size: 19px;
+    }
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    z-index: 1;
+    transform: translateX(50% - 100px);
+}

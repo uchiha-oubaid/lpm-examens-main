@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Lycée Pilote de Manouba – Gestion des Examens</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Feuille de style principale -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo Lycée Pilote de Manouba">
+        </div>
+        <h1>Lycée Pilote de Manouba</h1>
+        <p>Système de gestion des examens et des convocations</p>
+    </header>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+    <nav>
+        <ul>
+            <li><a class="titresa" href="#accueil">Accueil</a></li>
+            <li><a class="titresa" href="#espaces">Espaces</a></li>
+            <li><a class="titresa" href="#fonctionnalites">Fonctionnalités</a></li>
+        </ul>
+    </nav>
+
+    <!-- =========================
+         CONTENU PRINCIPAL
+    ========================== -->
+    <main>
+        
+        <!-- SECTION ACCUEIL -->
+        <section id="accueil">
+            <a class="titres">Bienvenue</a>
+            <p class="text">
+                Cette plateforme officielle permet la gestion centralisée des examens
+                du Lycée Pilote de Manouba : répartition des élèves, plans de salle,
+                convocations et accès sécurisé pour l’administration, les élèves et
+                les parents.
+            </p>
+        </section>
+
+        <!-- SECTION ESPACES -->
+        <section id="espaces">
+            <a class="titres">Accès aux espaces</a>
+            <p class="text">Veuillez sélectionner votre espace :</p>
+
+            <a href="auth/admin/index.html" class="btn">Espace Administration</a>
+            <a href="auth/login_eleve.php" class="btn">Espace Élève</a>
+            <a href="auth/login_parent.php" class="btn">Espace Parent</a>
+        </section>
+
+        <!-- SECTION FONCTIONNALITÉS -->
+        <section id="fonctionnalites">
+            <a class="titres">Fonctionnalités principales</a>
+            <ul class="text">
+                <li>Gestion complète des élèves, salles et examens</li>
+                <li>Attribution automatique des matricules d’examen</li>
+                <li>Répartition intelligente des élèves dans les salles</li>
+                <li>Changement automatique de place à chaque épreuve</li>
+                <li>Génération des convocations et plans de salle en PDF</li>
+                <li>Accès sécurisé pour élèves et parents</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer>
+        <p>
+            &copy; 2026 – Lycée Pilote de Manouba<br>
+            Plateforme interne de gestion des examens
+        </p>
+    </footer>
+</body>
+</html>
