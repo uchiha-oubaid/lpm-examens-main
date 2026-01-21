@@ -149,6 +149,62 @@ input:focus {
     background-color: var(--border-color);
 }
 
+.new-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.new-account h5 {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.new-account a {
+    position: relative;
+    z-index: 1;
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: 300ms ease-in-out;
+    padding: 5px;
+}
+
+.new-account a:hover {
+    color: #fff;
+}
+
+.new-account a::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    width: 0;
+    height: 100%;
+    border-radius: 3px;
+    transition: 300ms ease-in-out;
+}
+
+.new-account a::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    width: 0;
+    height: 100%;
+    border-radius: 3px;
+    transition: 300ms ease-in-out;
+}
+
+.new-account a:hover::before,
+.new-account a:hover::after {
+    width: 100%;
+}
+
 /* ============ RESPONSIVE DESIGN ============ */
 @media (max-width: 768px) {
     header h1 {
