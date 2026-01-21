@@ -7,7 +7,7 @@
 
     <!-- CSS principal -->
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="../../logo.jpg">
+    <link rel="icon" href="../../../logo.jpg">
 </head>
 <body>
 
@@ -16,10 +16,10 @@
     ========================== -->
     <header>
         <div class="logo">
-            <img src="../../logo.jpg" alt="Logo Lycée Pilote de Manouba">
+            <img src="../../../logo.jpg" alt="Logo Lycée Pilote de Manouba">
         </div>
         <h1>Lycée Pilote de Manouba</h1>
-        <p>Accès réservé à l'élève</p>
+        <p>Accès réservé à l’administration</p>
     </header>
 
     <!-- =========================
@@ -29,7 +29,7 @@
         <div id="main-section">
             <section style="max-width: 400px; margin: auto;">
 
-                <h2 style="text-align:center;">Connexion Élève</h2>
+                <h2 style="text-align:center;">Connexion Administrateur</h2>
 
 
                 <form method="post" action="">
@@ -38,8 +38,28 @@
                         <input type="text" name="username" id="username" required>
                     </div>
 
+                    <div class="tabs" id="username-tab">
+                        <label for="username">E-mail:</label>
+                        <input type="text" name="username" id="username" required>
+                    </div>
+
+                    <div class="tabs" id="username-tab">
+                        <label for="username">Numéro do téléphone:</label>
+                        <input type="text" name="username" id="username">
+                    </div>
+
                     <div class="tabs" id="password-tab">
                         <label for="password">Mot de passe:</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+
+                    <div class="tabs" id="password-tab">
+                        <label for="password">Confirmez le mot de passe:</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+
+                    <div class="tabs" id="password-tab">
+                        <label for="password">Code d'identification Admin:</label>
                         <input type="password" name="password" id="password" required>
                     </div>
 
@@ -49,10 +69,10 @@
                 </form>
 
                 <p style="text-align:center; margin-top:15px;">
-                    <a id="return" href="../../index.html">← Retour à l'accueil</a>
+                    <a id="return" href="../../../index.html">← Retour à l'accueil</a>
                     <div class="new-account">
-                        <h5>Vous n'avez pas un compte ?</h5>
-                        <a id="create-account" href="/auth/new_account/eleve/index.html">créez un</a>
+                        <h5>Vous avez un compte ?</h5>
+                        <a id="create-account" href="../../admin/index.html">connectez!</a>
                     </div>
                 </p>
 
@@ -67,5 +87,8 @@
     <footer>
         <p>&copy; 2026 – Lycée Pilote de Manouba</p>
     </footer>
+
+    <script src="auth.js"></script>
+
 </body>
 </html>

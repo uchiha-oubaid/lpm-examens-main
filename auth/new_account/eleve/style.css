@@ -61,7 +61,7 @@ header p {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateY(50%);
+    transform: translateY(33%);
     padding: 20px;
 }
 
@@ -275,7 +275,7 @@ input:focus {
     }
 
     .container {
-        transform: translateY(40%);
+        transform: translateY(33%);
         padding: 10px;
     }
 
@@ -308,5 +308,15 @@ input:focus {
         font-size: 11px;
         padding: 10px;
         margin-top: 50px;
+        transform: translateY(50px);
+    }
+}
+
+@media (min-width: 900px) {
+    footer {
+        padding: 10px;
+        margin-top: 50px;
+        height: fit-content;
+        transform: translateY(150px);
     }
 }
