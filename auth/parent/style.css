@@ -51,34 +51,32 @@ header p {
     align-items: center;
     justify-content: center;
     transform: translateY(35%);
+    padding: 20px;
 }
 
 #main-section {
     position: relative;
     border: 2px solid var(--secondary-color);
     border-radius: 5px;
-    width: 80vh;
-    height: 50vh;
+    width: 80%;
+    max-width: 600px;
+    padding: 40px 20px 60px 20px;
     margin-bottom: 100px;
 }
 
 #main-section h2 {
     color: var(--primary-color);
-    position: absolute;
-    top: 10px;
-    left: 15vh; /* FOR CENTERING THE TITLE*/   
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 #main-section form {
-    position: absolute;
-    top: 25%;
-    width: 60vh;
-    height: 27vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    padding: 5px;
+    gap: 20px;
+    width: 100%;
 }
 
 .tabs {
@@ -88,34 +86,14 @@ header p {
     height:fit-content;
 }
 
-#return {
-    position: absolute;
-    bottom: 10px;
-    left: 27vh;
-    text-decoration: none;
-}
-
 footer {
     background-color: var(--primary-color);
     color: #ffffff;
     text-align: center;
     padding: 15px;
-    bottom: 0px;
-    position: absolute;
     width: 100%;
     margin-top: 40px;
     font-size: 13px;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header h1 {
-        font-size: 20px;
-    }
 }
 
 label {
@@ -161,10 +139,103 @@ input:focus {
     padding: 5px;
     background-color: transparent;
     border-radius: 4px;
-    transform: translateX(-25px);
     transition: 300ms ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
 }
 
 #return:hover {
     background-color: var(--border-color);
+}
+
+/* ============ RESPONSIVE DESIGN ============ */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+
+    .container {
+        transform: translateY(20%);
+        padding: 15px;
+    }
+
+    #main-section {
+        width: 95%;
+        max-width: 100%;
+        padding: 30px 15px 50px 15px;
+        margin-bottom: 80px;
+    }
+
+    #main-section h2 {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    .tabs {
+        width: 100%;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .btn {
+        height: 35px;
+        font-size: 14px;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    .container {
+        transform: translateY(15%);
+        padding: 10px;
+    }
+
+    #main-section {
+        width: 100%;
+        padding: 25px 15px 50px 15px;
+        margin-bottom: 60px;
+    }
+
+    #main-section h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input {
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .btn {
+        height: 35px;
+        font-size: 13px;
+    }
+
+    footer {
+        font-size: 11px;
+        padding: 10px;
+    }
 }
