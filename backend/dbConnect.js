@@ -9,6 +9,6 @@ const pool = createPool({
 
 function selectColumns() {
     pool.query(`SELECT * FROM lpmDataBase.users`, (err, res) => {
-        console.log(res);
+      console.log(res);
     });
 }
