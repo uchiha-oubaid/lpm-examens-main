@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 
 app.post('/new/admin', (req, res) => {
     const {username, email, number, password, passwordO, code} = req.body;  // This is the data from the client
-    console.log('Server says: ', username); // this is where the data will be accessed!
+    console.log(`Server says: Your name is ${username}, your password is ${password} and your number is ${number}`); // this is where the data will be accessed!
 });
 
 app.listen(3000, () => {
