@@ -32,7 +32,7 @@
                 <h2 style="text-align:center;">Connexion Élève</h2>
 
 
-                <form method="post" action="">
+                <form id="data-form">
                     <div class="tabs" id="username-tab">
                         <label for="username">Identifiant:</label>
                         <input type="text" name="username" id="username" required>
@@ -40,12 +40,12 @@
 
                     <div class="tabs" id="username-tab">
                         <label for="username">E-mail:</label>
-                        <input type="text" name="username" id="username" required>
+                        <input type="text" name="username" id="email" required>
                     </div>
 
                     <div class="tabs" id="username-tab">
                         <label for="username">Numéro do téléphone:</label>
-                        <input type="text" name="username" id="username">
+                        <input type="text" name="username" id="number">
                     </div>
 
                     <div class="tabs" id="password-tab">
@@ -55,7 +55,7 @@
 
                     <div class="tabs" id="password-tab">
                         <label for="password">Confirmez le mot de passe:</label>
-                        <input type="password" name="password" id="password" required>
+                        <input type="password" name="password" id="passwordO" required>
                     </div>
 
                    <button id="button" type="submit" class="btn" style="width:100%;">
@@ -82,5 +82,7 @@
     <footer>
         <p>&copy; 2026 – Lycée Pilote de Manouba</p>
     </footer>
+
+    <script src="logic.js"></script>
 </body>
 </html>
