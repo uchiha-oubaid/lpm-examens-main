@@ -159,6 +159,25 @@ input:focus {
     margin-top: 15px;
 }
 
+.new-account h5 {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+#create-code {
+    position: relative;
+    z-index: 1;
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: 300ms ease-in-out;
+    padding: 5px;
+    width: 250px;
+    margin-top: 10px;
+    transform: translateX(50%);
+}
+
+
+
 #return:hover {
     background-color: var(--border-color);
 }
